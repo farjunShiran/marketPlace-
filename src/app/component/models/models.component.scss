@@ -1,0 +1,17 @@
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.card-container .card{
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    align-items: center;
+    padding: 50px;
+    cursor: pointer;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

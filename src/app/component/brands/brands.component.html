@@ -1,0 +1,8 @@
+<div ngClass="wrap-brand" >
+    <div class="brand" *ngFor="let brand of brands" (click)="goToModelsPage(brand.name)">
+        <h5 class="logo-name">{{brand.name}}</h5>
+        <div class="img">
+            <img class="img-logo" src={{brand.image}} alt={{brand.name}}>
+        </div>
+    </div>
+</div>

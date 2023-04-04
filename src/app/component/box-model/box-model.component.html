@@ -1,0 +1,11 @@
+<div class="wrap-box-model" *ngIf="modelData$ | async as modelData">
+    <div class="card-model" *ngFor="let model of modelData">
+        <h1>{{ model.make }} {{ model.model }}</h1>
+        <p>Fuel Type: {{ model.fuel_type }}</p>
+        <p>Class: {{ model.class }}</p>
+        <p>Year: {{ model.year }}</p>
+        <p>Transmission: {{ model.transmission }}</p>
+        <button class="btn">Get a Quote</button>
+        <button class="btn" (click)="openFinancePopup(model)">Finance Offer</button>
+    </div>
+</div>

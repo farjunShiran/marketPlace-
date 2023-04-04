@@ -1,0 +1,32 @@
+<div class="wrap-popup">
+    <h1 mat-dialog-title>loan suggestion</h1>
+    <h1>{{ data.make}} {{data.model}} </h1>
+    <p>The interest rate for the loan amount is 14%</p>
+    <div>
+        <h6>Duration </h6>
+        <mat-slider min="1" max="120" step="1">
+
+            <input matSliderThumb [(ngModel)]="loanDurationSelected">
+        </mat-slider>
+        <p>You selected {{loanDurationSelected}} month</p>
+
+    </div>
+    <div>
+        <h6>Loan amount</h6>
+        <mat-slider min="1" max="200000" step="500">
+            <input matSliderThumb [(ngModel)]="loanAmountSelected">
+        </mat-slider>
+        <p>You selected {{loanAmountSelected}} NIS</p>
+
+    </div>
+    <div class="button-popup" >
+        <button class="btn" (click)="calculateFinanceOffer()"> View loan offer</button>
+        <button class="btn close" mat-button (click)="closePopup()">X</button>
+    </div>
+    <div class="btn" *ngIf="calculateObj.averagePayment!==0 &&calculateObj.totalPayment!==0">
+        <p>Average monthly payment {{calculateObj.averagePayment}}</p>
+        <p>Total payment {{calculateObj.totalPayment}}</p>
+
+    </div>
+
+</div>

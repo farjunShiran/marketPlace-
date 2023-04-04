@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 5px 5%;
+    align-items: center;
+    background: #93b492;
+    ul {
+        direction: rtl;
+        display: flex;
+        li {
+            list-style-type: none;
+        }
+    }
+    ul li a {
+        font-size: 20px;
+        padding: 10px;
+        color: #f6eddb;
+        display: block;
+        cursor: pointer;
+    }
+}

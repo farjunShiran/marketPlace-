@@ -1,0 +1,22 @@
+.wrap-box-model{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrap-box-model .card-model{
+    display: flex;
+    margin:  20px auto;
+    border: 2px solid black;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+::ng-deep .cdk-overlay-container .cdk-overlay-pane {
+    position: absolute!important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

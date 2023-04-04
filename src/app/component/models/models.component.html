@@ -1,0 +1,7 @@
+<div class="card-container" >
+    <a class="card" *ngFor="let model of selectedModel" [routerLink]="['/model']">
+        <img class="image" [src]="model.image" alt="{{model.modelName}}" />
+        <h3>{{model.modelName}}</h3>
+        <p>{{model.price | currency}}</p>
+    </a>
+</div>
